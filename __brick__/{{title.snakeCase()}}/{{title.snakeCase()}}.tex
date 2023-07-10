@@ -1,0 +1,62 @@
+\documentclass[
+    a4paper,%
+    12pt,%
+    oneside, %
+    openany, %
+]{book}
+
+\input{src/preamble}
+
+
+\begin{document}
+\baselineskip24pt
+
+%%% Set page numbering to roman numerals
+\pagenumbering{roman}
+
+%%% ----- Title page ------------
+\input{src/titlepage}
+
+
+\pagestyle{plain}
+
+%%%----- Certification page -------------
+\input{src/certification.tex}
+
+%%% ---- Dedication Page ------------
+\input{src/dedication.tex}
+
+%%% ---- Acknowledgements Page ------------
+\input{src/acknowledgements.tex}
+
+%%%% ---------- Abstract ----------
+\input{src/abstract.tex}
+
+%%% ---------------- Table of Contents ----------------------
+\tableofcontents
+
+%%% ------- List of Figures -----------------
+\listoffigures
+
+\pagenumbering{arabic}
+
+%% --- Introduction Chapter ----------
+\input{src/introduction.tex}
+
+
+
+
+
+%%% ---- References Page -------------
+\bibliographystyle{apalike}
+\bibliography{references}
+
+
+
+
+
+
+
+
+
+\end{document}

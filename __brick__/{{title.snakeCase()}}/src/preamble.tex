@@ -1,0 +1,145 @@
+%%% --------------- Document Meta data --------------- %%%%%%%%%%%%%%
+
+\newcommand{\Author}{{name}}
+\newcommand{\Department}{Department of {{department}}}
+\newcommand{\Faculty}{{faculty}}
+\newcommand{\Supervisor}{{supervisor}}
+\newcommand{\MatricNumber}{{matric_number}}
+\newcommand{\Degree}{{#isBsc}}{Bachelor of Science Degree}{{/isBsc}}{{#isMsc}}{Master of Science Degree}{{/isMsc}}{{#isPhd}}{Doctor of Philosophy Degree}{{/isPhd}}
+\newcommand{\Field}{{field}}
+\newcommand{\Title}{{project_topic}}
+
+
+\usepackage{amsmath, amsfonts, amssymb, amsthm}
+\usepackage[
+    lmargin=3.7cm,%
+    rmargin=2.5cm,%
+    bmargin=2.5cm,%
+    tmargin=2.5cm %
+]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{csquotes}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{apalike}
+\usepackage{hyperref}
+\usepackage{fancyhdr}
+\usepackage{url}
+\usepackage{algorithm}
+\usepackage{algorithmic}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{sectsty}
+
+
+\chapterfont{\centering}
+
+
+%%%% ------ Links ------------
+\hypersetup{
+    colorlinks,
+    linkcolor={red!50!black},
+    citecolor={green!50!black},
+    urlcolor={blue!80!black}
+}
+
+%%%%%% ------ Tikz Stuffs -----------------------
+\usepackage{tikz}
+\usepackage{tikz-cd}
+
+
+%%%%%% ---- Theorem Styles and environments ----------------------
+\theoremstyle{definition}
+\newtheorem{thm}{Theorem}[section]
+\newtheorem{defn}{Definition}[section]
+\newtheorem{prop}{Proposition}[section]
+\newtheorem{lem}{Lemma}[section]
+\newtheorem*{notn}{Notation}
+\newtheorem{rem}{Remark}[section]
+
+
+%%%%% ----- Custom Commands ----------------------
+\newcommand{\ra}{\rightarrow} %% Shprt arrow to the right
+\newcommand{\lra}{\longrightarrow}  %% long arrow to the right
+\newcommand{\disp}{\displaystyle} %% for inline math displaystyle
+\newcommand{\QQ}{\mathbb{Q}} %% Set of rational numbers
+\newcommand{\NN}{\mathbb{N}} %% Set of natural numbers
+\newcommand{\CC}{\mathbb{C}} %% Set of complex numbers
+\newcommand{\PP}{\mathbb{P}} %% Set of complex numbers
+\newcommand{\RR}{\mathbb{R}} %% Set of real numbers
+\newcommand{\Sb}{\mathbb{S}}
+\newcommand{\htp}[1]{\underset{#1}{\simeq}} %%% Homotopy of two functions in
+\newcommand{\ZZ}{\mathbb{Z}}
+\newcommand{\TT}{\mathbb{T}}
+\newcommand{\KK}{\mathbb{K}}
+
+
+
+
+%%%%% --------- Custom Math operators -------------------------------
+
+\DeclareMathOperator{\rel}{rel}
+\DeclareMathOperator{\map}{map}
+\DeclareMathOperator{\cat}{cat}
+
+
+% referencing
+\newcommand{\reffig}[1]{Fig.~\ref{#1}}
+\newcommand{\reflst}[1]{Lst.~\ref{#1}}
+\newcommand{\refalg}[1]{Alg.~\ref{#1}}
+\newcommand{\refsec}[1]{Sec.~\ref{#1}}
+\newcommand{\reftab}[1]{Table~\ref{#1}}
+\newcommand{\refeq}[1]{\eqref{#1}}
+
+
+
+%% | ----------------- listings - showing code ---------------- |
+
+\usepackage{listings}
+\usepackage{lstautogobble}  % Fix relative indenting
+\usepackage{color}          % Code coloring
+
+\definecolor{bluekeywords}{rgb}{0.13, 0.13, 1}
+\definecolor{greencomments}{rgb}{0, 0.5, 0}
+\definecolor{redstrings}{rgb}{0.9, 0, 0}
+\definecolor{graynumbers}{rgb}{0.5, 0.5, 0.5}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+\usepackage{listings}
+\lstset{
+    autogobble,
+    columns=fullflexible,
+    showspaces=false,
+    showtabs=false,
+    breaklines=true,
+    showstringspaces=false,
+    breakatwhitespace=true,
+    escapeinside={(*@}{@*)},
+    numberstyle=\tiny\color{gray},
+    keywordstyle=\color{blue},
+    commentstyle=\color{dkgreen},
+    stringstyle=\color{mauve},
+    basicstyle={\small\ttfamily},
+    frame=l,
+    framesep=12pt,
+    xleftmargin=12pt,
+    tabsize=4,
+    captionpos=b
+}
+
+%% | --------------- change formatting of lists --------------- |
+
+\usepackage{enumitem}
+\setlist{nosep}
+
+
+
+%% Changes the Bibliography page header to `References`
+\renewcommand{\bibname}{References}
+
+
+
+\title{{ project_topic }}

@@ -1,0 +1,16 @@
+*.pdf
+*.log
+*.fls
+*.aux
+*.fdb_latexmk
+*.synctex.gz
+*.dvi
+*.bbl
+*.blg
+*.toc
+*.lof
+*.out
+*.ps
+*.pre
+
+build/

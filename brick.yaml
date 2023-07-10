@@ -1,0 +1,89 @@
+name: unibadan_template
+description: A new brick created with the Mason CLI.
+repository: https://github.com/Abdulrasheed1729/unibadan_template
+
+# The following defines the brick repository url.
+# Uncomment and update the following line before publishing the brick.
+# repository: https://github.com/my_org/my_repo
+
+# The following defines the version and build number for your brick.
+# A version number is three numbers separated by dots, like 1.2.34
+# followed by an optional build number (separated by a +).
+version: 0.1.0+1
+
+# The following defines the environment for the current brick.
+# It includes the version of mason that the brick requires.
+environment:
+  mason: ">=0.1.0-dev.50 <0.1.0"
+
+# Variables specify dynamic values that your brick depends on.
+# Zero or more variables can be specified for a given brick.
+# Each variable has:
+#  * a type (string, number, boolean, enum, array, or list)
+#  * an optional short description
+#  * an optional default value
+#  * an optional list of default values (array only)
+#  * an optional prompt phrase used when asking for the variable
+#  * a list of values (enums only)
+#  * an optional separator (list only)
+vars:
+  title:
+    type: string
+    description: Your name
+    default: My Final project
+    prompt: What do you want to save your project as?
+
+  project_topic:
+    type: string
+    description: Your project topic
+    default: A critical analysis on the nutritional benefits of Garri.
+    prompt: What your project topic?
+
+  name:
+    type: string
+    description: Your full name
+    default: Akintola Osepetu
+    prompt: What is your name
+
+  matric_number:
+    type: number
+    description: Your matriculation number
+    default: 123456
+    prompt: What is your matric number?
+
+  field:
+    type: string
+    description: The field of study
+    default: Animal Science
+    prompt: What is your of field of study?
+
+  degree_type:
+    type: enum
+    description: Level of study
+    default: undergraduate
+    prompt: What is your level of study?
+    values:
+      - undergraduate
+      - masters
+      - phd
+
+  faculty:
+    type: enum
+    description: Your faculty
+    default: Science
+    prompt: What is your faculty?
+    values:
+      - Science
+      - Agriculture
+      - Technology
+      - Education
+      - Art
+      - Social Science
+      - Pharmacy
+      - Basic Medical Sciences
+
+  supervisor:
+    type: string
+    description: Name of supervisor
+    default: Professor Ciroma Chukwuma Adekunle
+    prompt: Who is your Supervisor
