@@ -1,5 +1,5 @@
 <p align='center'>
-<img src="docs/unibadan_logo.png" alt="unibadan logo"/>
+<img src="https://raw.githubusercontent.com/Abdulrasheed1729/unibadan_template/main/docs/unibadan_logo.png" alt="unibadan logo"/>
 </p>
 
 # Unibadan Template
