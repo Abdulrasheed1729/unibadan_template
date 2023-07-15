@@ -1,5 +1,5 @@
 name: unibadan_template
-description: A new brick created with the Mason CLI.
+description: A starter template for creating thesis for the University of Ibadan students.
 repository: https://github.com/Abdulrasheed1729/unibadan_template
 
 # The following defines the brick repository url.
