@@ -80,7 +80,10 @@ vars:
       - Art
       - Social Science
       - Pharmacy
-      - Basic Medical Sciences
+      - College of Medicine
+      - Law
+      - Renewable Natural Resources
+      - Veterinary Medicine
 
   supervisor:
     type: string
